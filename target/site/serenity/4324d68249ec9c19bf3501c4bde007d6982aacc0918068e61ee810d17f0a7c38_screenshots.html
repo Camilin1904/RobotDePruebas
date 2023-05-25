@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Proyecto COLORLIB</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="cc73138444f9221952e713a02eaeeb3645f1fb5bb17b5ffb9bc550620d6d14fe.html">Verify The Validation Form</a></span>
+                > <span class="truncate-60"><a
+                    href="4324d68249ec9c19bf3501c4bde007d6982aacc0918068e61ee810d17f0a7c38.html">Verify the validation form </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 24-05-2023 10:28</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Verify The Validation Form </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Me as a user WANT to enter the colorlib page TO verify the validation form
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="a1a3ea4878672669fd991f477f0c440e5827f143a9b9c2d028a6d28f83355513.html">Historia De Usuario
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Verify the validation form
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I enter with my credentials<br><table class='embedded'><thead><th>User</th><th>Password</th></thead><tbody><tr><td>&lt;User&gt;</td><td>&lt;Password&gt;</td></tr></tbody></table><br>When I proceed with the authentication<br>And enter submenu form validations<br>And check the title of the form on the screen<br>And fill all the fields<br><table class='embedded'><thead><th>Required</th><th>Select</th><th>MultipleSelect</th><th>Url</th><th>Email</th><th>Password2</th><th>ConfirmPassword</th><th>MinField</th><th>MaxField</th><th>Number</th><th>IP</th><th>Date</th><th>DateEarlier</th></thead><tbody><tr><td>&lt;Required&gt;</td><td>&lt;Select&gt;</td><td>&lt;MultipleSelect&gt;</td><td>&lt;Url&gt;</td><td>&lt;Email&gt;</td><td>&lt;Password2&gt;</td><td>&lt;ConfirmPassword&gt;</td><td>&lt;MinField&gt;</td><td>&lt;MaxField&gt;</td><td>&lt;Number&gt;</td><td>&lt;IP&gt;</td><td>&lt;Date&gt;</td><td>&lt;DateEarlier&gt;</td></tr></tbody></table><br>And click button to validate<br>Then field required will be empty</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="16d89ad4e837f27a2a26bc6c4d0dcbf42bcb383640e6e1749332a8c6ef22697b.png" title=" 1: Verify the validation form ({User=admin, Password=admin, Required=prueba, Select=option2, MultipleSelect=option3, Url=http://dfsdfd.com, Email=a@q.com, Password2=123, ConfirmPassword=123, MinField=111111, MaxField=null, Number=42.00, IP=192.168.3.200, Date=2023-5-22, DateEarlier=2010-12-10})" width="1600"/>
+                <img src="16d89ad4e837f27a2a26bc6c4d0dcbf42bcb383640e6e1749332a8c6ef22697b.png" title=" When I proceed with the authentication" width="1600"/>
+                <img src="16d89ad4e837f27a2a26bc6c4d0dcbf42bcb383640e6e1749332a8c6ef22697b.png" title=" Open page" width="1600"/>
+                <img src="16d89ad4e837f27a2a26bc6c4d0dcbf42bcb383640e6e1749332a8c6ef22697b.png" title=" Sign in: admin, admin" width="1600"/>
+                <img src="16d89ad4e837f27a2a26bc6c4d0dcbf42bcb383640e6e1749332a8c6ef22697b.png" title=" Send key: admin" width="1600"/>
+                <img src="4f7189cfef6c7ac55921e780a289f30767c4b418ad0eb588cd55129d5991a98c.png" title=" Send key: admin" width="1600"/>
+                <img src="347507fca8d7a714ec740c28cc28235f84559eeb02cb2fe1260331b5e98069d2.png" title=" Send key: admin (completed)" width="1600"/>
+                <img src="b53cc25371963e38bb9330dd097dd5cfb045281d1de928edb4655db049ba4551.png" title=" Sign in: admin, admin" width="1600"/>
+                <img src="2fb374feae5526727d820a7ea893aff255912ae7c0920709ace36ceeaffdd804.png" title=" Sign in: admin, admin" width="1600"/>
+                <img src="2fb374feae5526727d820a7ea893aff255912ae7c0920709ace36ceeaffdd804.png" title=" Sign in: admin, admin (completed)" width="1600"/>
+                <img src="2fb374feae5526727d820a7ea893aff255912ae7c0920709ace36ceeaffdd804.png" title=" When I proceed with the authentication (completed)" width="1600"/>
+                <img src="2fb374feae5526727d820a7ea893aff255912ae7c0920709ace36ceeaffdd804.png" title=" And enter submenu form validations" width="1600"/>
+                <img src="2fb374feae5526727d820a7ea893aff255912ae7c0920709ace36ceeaffdd804.png" title=" Open menu" width="1600"/>
+                <img src="1376718e41028921907208918fa54f61c66eaa1e5a6890bdef7bd04474564714.png" title=" Open menu" width="1600"/>
+                <img src="1376718e41028921907208918fa54f61c66eaa1e5a6890bdef7bd04474564714.png" title=" Open menu (completed)" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" And enter submenu form validations" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" And enter submenu form validations (completed)" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" And check the title of the form on the screen" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" And check the title of the form on the screen (completed)" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | Password2 | ConfirmPassword | MinField | MaxField | Number | IP | Date | DateEarlier |
+| prueba | option2 | option3 | http://dfsdfd.com | a@q.com | 123 | 123 | 111111 | null | 42.00 | 192.168.3.200 | 2023-5-22 | 2010-12-10 |" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" Fill: prueba, option2, option3, http://dfsdfd.com, a@q.com, 123, 123, 111111, null, 42.00, 192.168.3.200, 2023-5-22, 2010-12-10" width="1600"/>
+                <img src="822d0eeeb1a3a98a9a50d0128817029c9950c1d06705eae5e4183d5df6b97200.png" title=" Fill: prueba, option2, option3, http://dfsdfd.com, a@q.com, 123, 123, 111111, null, 42.00, 192.168.3.200, 2023-5-22, 2010-12-10" width="1600"/>
+                <img src="ab9ae1e843d85b4321584181c4c91ce768c179c589ba785b74a69827d2c2765c.png" title=" Fill: prueba, option2, option3, http://dfsdfd.com, a@q.com, 123, 123, 111111, null, 42.00, 192.168.3.200, 2023-5-22, 2010-12-10" width="1600"/>
+                <img src="6299bfdba93db701ce028f83944b00d4c0ff45de4b85f32f485e9dd373d7eb08.png" title=" Fill: prueba, option2, option3, http://dfsdfd.com, a@q.com, 123, 123, 111111, null, 42.00, 192.168.3.200, 2023-5-22, 2010-12-10 (completed)" width="1600"/>
+                <img src="6299bfdba93db701ce028f83944b00d4c0ff45de4b85f32f485e9dd373d7eb08.png" title=" And fill all the fields
+| Required | Select | MultipleSelect | Url | Email | Password2 | ConfirmPassword | MinField | MaxField | Number | IP | Date | DateEarlier |
+| prueba | option2 | option3 | http://dfsdfd.com | a@q.com | 123 | 123 | 111111 | null | 42.00 | 192.168.3.200 | 2023-5-22 | 2010-12-10 | (completed)" width="1600"/>
+                <img src="6299bfdba93db701ce028f83944b00d4c0ff45de4b85f32f485e9dd373d7eb08.png" title=" And click button to validate" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" And click button to validate" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" And click button to validate (completed)" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" Then field required will be empty" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" Then field required will be empty (completed)" width="1600"/>
+                <img src="31abf5fdd2a3a5a76233b65f666a0dad011f226b3525a92a5bb189116b5aff37.png" title=" 1: Verify the validation form ({User=admin, Password=admin, Required=prueba, Select=option2, MultipleSelect=option3, Url=http://dfsdfd.com, Email=a@q.com, Password2=123, ConfirmPassword=123, MinField=111111, MaxField=null, Number=42.00, IP=192.168.3.200, Date=2023-5-22, DateEarlier=2010-12-10}) (completed): <span class='success-color'>SUCCESS</span>" width="1600"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.0.5</span>
+</div>
+</body>
+</html>
