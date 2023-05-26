@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 7 Steps (?[32m7 passed?[0m)
-0m41.114s
+0m52.717s
 
 
 ]]></system-out>
@@ -25,6 +25,6 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Verify the validation form
-[pool-2-thread-1] INFO org.reflections.Reflections - Reflections took 5 ms to scan 0 urls, producing 0 keys and 0 values
+[pool-2-thread-1] INFO org.reflections.Reflections - Reflections took 8 ms to scan 0 urls, producing 0 keys and 0 values
 ]]></system-err>
 </testsuite>

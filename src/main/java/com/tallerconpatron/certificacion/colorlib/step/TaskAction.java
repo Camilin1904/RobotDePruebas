@@ -82,11 +82,11 @@ public class TaskAction extends BasePage {
     }
 
     public void send(){
-        try {
+        /*try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }
+        }*/
         paginaFormulario.validation.waitUntilClickable().click();
 
     }
@@ -96,6 +96,6 @@ public class TaskAction extends BasePage {
     }
 
     public boolean checkTitle(){
-        return paginaMenu.getDriver().getTitle().equals("Form Validation");
+        return paginaFormulario.getDriver().getTitle().equals("Form Validation");
     }
 }

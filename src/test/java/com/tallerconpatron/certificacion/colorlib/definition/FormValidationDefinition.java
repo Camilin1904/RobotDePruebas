@@ -81,7 +81,7 @@ public class FormValidationDefinition extends BasePage {
 
     @And("click button to validate")
     public void clickButtonToValidate() throws Exception {
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         taskAction.send();
     }
 
